@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} bg-[#171717] py-[20px]`}>
         <ClientLayout>
-          <section className="w-[90%] mx-auto h-[100vh] flex flex-col justify-between">
+          <section className="w-[90%] mx-auto h-[90vh] flex flex-col justify-between">
             <Header />
             {children}
             <Footer />
