@@ -3,7 +3,7 @@ import Input from "@/components/Input";
 
 export default function Home() {
   return (
-    <main className="mt-[100px]">
+    <main className="">
       <H2 
         text={'User  To Product'}
       /> 

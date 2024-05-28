@@ -35,7 +35,7 @@ const data  = [
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col justify-center items-center mt-[100px]'>
+    <footer className='flex flex-col justify-center items-center'>
         <div className='flex items-center mb-[28px]'>
             {data.map((item, id) => (
                 <SocialIcons 
