@@ -1,12 +1,12 @@
 'use client';
 
 import { useContext, useEffect, useRef, useState } from "react";
-import { context } from "./ClientLayout";
+// import { context } from "./ClientLayout";
 import { validateEmail } from "@/utils/validateEmail";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Input = () => {
+const Input = ({ type }) => {
 
     // const { focus } = useContext(context);
     // const ref = useRef(null);
@@ -21,7 +21,7 @@ const Input = () => {
         if(!isEmailValid) return;
       
         setIsLoading(true);
-        
+
         try {
             const response = await fetch("api/", {
               method: 'POST',
@@ -29,6 +29,7 @@ const Input = () => {
                 'Content-Type': 'application/json',
               },
               body: JSON.stringify({
+                type,
                 email
               }),
             });

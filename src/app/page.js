@@ -8,7 +8,7 @@ export default function Home() {
         text={"Everyone's unique"}
       /> 
       <H2 
-        text={'so let customize our page'}
+        text={'so let customize your page'}
       />
   
       {/* <Input /> */}

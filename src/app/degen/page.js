@@ -10,9 +10,9 @@ const page = () => {
         text={'Bet on creator performance in'}
       />
       <H2 
-        text={'Tourney through social toe '}
+        text={'Tourney through social token '}
       />
-      <Input />
+      <Input type='degen'/>
     </main>
   )
 }

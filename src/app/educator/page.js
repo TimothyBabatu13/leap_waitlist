@@ -6,12 +6,12 @@ const page = () => {
   return (
     <main>
       <H2 
-        text={'From  A Fan to PRO'}
+        text={'Participate in Content Tourneys'}
       />
       <H2 
-        text={'LEAP rewards your learning journey'}
+        text={'and Get rewarded'}
       />
-      <Input />
+      <Input type='educator'/>
     </main>
   )
 }

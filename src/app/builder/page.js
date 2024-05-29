@@ -10,7 +10,7 @@ const page = () => {
       <H2 
         text={'Generated Content '}
       />
-      <Input />
+      <Input type='builder'/>
     </main>
   )
 }
