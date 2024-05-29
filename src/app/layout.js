@@ -6,34 +6,65 @@ import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Leap",
-  description: `Leap is a customer/user feedback platform based on peer to peer educational resource pooling that enables founders gain insight into their business/projects`,
-  twitter: {
-    card: "summary_large_image",
+export async function generateMetadata() {
+  return {
     title: "Leap",
     description: `Leap is a customer/user feedback platform based on peer to peer educational resource pooling that enables founders gain insight into their business/projects`,
-    siteId: "",
-    creator: "@timothy_akanbii",
-    creatorId: "",
-    images: ["/opengraph.svg"]
-  },
-  openGraph: {
-    title: "Leap",
-    description: `Leap is a customer/user feedback platform based on peer to peer educational resource pooling that enables founders gain insight into their business/projects`,
-    url: "https://leap-waitlist.vercel.app",
-    siteName: "Leap",
-    images: [
-      {
-        url: "/opengraph.svg",
-        width: 800,
-        height: 800
-      },
-    ],
-  },
-  locale: "en_US",
-  type: "website"
-};
+    twitter: {
+      card: "summary_large_image",
+      title: "Leap",
+      description: `Leap is a customer/user feedback platform based on peer to peer educational resource pooling that enables founders gain insight into their business/projects`,
+      siteId: "",
+      creator: "@timothy_akanbii",
+      creatorId: "",
+      images: ["/opengraph.svg"]
+    },
+    openGraph: {
+      title: "Leap",
+      description: `Leap is a customer/user feedback platform based on peer to peer educational resource pooling that enables founders gain insight into their business/projects`,
+      url: "https://leap-waitlist.vercel.app",
+      siteName: "Leap",
+      images: [
+        {
+          url: "/opengraph.svg",
+          width: 800,
+          height: 800
+        },
+      ],
+    },
+    locale: "en_US",
+    type: "website"
+  }
+}
+
+// export const metadata = {
+//   title: "Leap",
+//   description: `Leap is a customer/user feedback platform based on peer to peer educational resource pooling that enables founders gain insight into their business/projects`,
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "Leap",
+//     description: `Leap is a customer/user feedback platform based on peer to peer educational resource pooling that enables founders gain insight into their business/projects`,
+//     siteId: "",
+//     creator: "@timothy_akanbii",
+//     creatorId: "",
+//     images: ["/opengraph.svg"]
+//   },
+//   openGraph: {
+//     title: "Leap",
+//     description: `Leap is a customer/user feedback platform based on peer to peer educational resource pooling that enables founders gain insight into their business/projects`,
+//     url: "https://leap-waitlist.vercel.app",
+//     siteName: "Leap",
+//     images: [
+//       {
+//         url: "/opengraph.svg",
+//         width: 800,
+//         height: 800
+//       },
+//     ],
+//   },
+//   locale: "en_US",
+//   type: "website"
+// };
 
 export default function RootLayout({ children }) {
   return (
