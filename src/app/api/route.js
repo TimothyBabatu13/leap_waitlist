@@ -5,7 +5,7 @@ import { addDoc, collection, getDocs } from "firebase/firestore";
 const ref = collection(db, "waitListEmails");
 
 export const POST = async (req)=>{
-  
+    
     const request = await req.json();
     const { email } = request;
 

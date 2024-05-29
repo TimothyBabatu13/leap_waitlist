@@ -8,8 +8,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Input = () => {
 
-    const { focus } = useContext(context);
-    const ref = useRef(null);
+    // const { focus } = useContext(context);
+    // const ref = useRef(null);
 
     
     const [email, setEmail] = useState("");
@@ -47,9 +47,9 @@ const Input = () => {
             setIsLoading(false)
             return;
     }
-    useEffect(()=> {
-        focus && ref.current.focus();
-    }, [focus])
+    // useEffect(()=> {
+    //     focus && ref.current.focus();
+    // }, [focus])
   return (
    <form 
         className={`relative w-[100%] sm:w-[60%] mx-auto mt-[20px]`}
@@ -58,7 +58,6 @@ const Input = () => {
         <ToastContainer />
         <input 
             type="email"
-            ref={ref}
             value={email}
             onChange={(e)=> setEmail(e.target.value)}
             placeholder="Enter your mail address"
