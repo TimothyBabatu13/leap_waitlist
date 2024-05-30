@@ -4,31 +4,31 @@ import { Facebook, Instagram, Linkedln, Reddit, Tiktok, Twitch, Twitter } from '
 
 const data  = [
     {
-        "href": '',
+        "href": '/',
         "children": <Linkedln /> 
     },
     {
-        "href": '',
+        "href": '/',
         "children": <Instagram />
     },
     {
-        "href": '',
+        "href": '/',
         "children": <Facebook />
     },
     {
-        "href": '',
+        "href": 'https://twitter.com/learn_earn_play',
         "children": <Twitter /> 
     },
     {
-        "href": '',
+        "href": '/',
         "children": <Reddit />
     },
     {
-        "href": '',
+        "href": '/',
         "children": <Tiktok />
     },
     {
-        "href": '',
+        "href": '/',
         "children": <Twitch />
     },
 ]
