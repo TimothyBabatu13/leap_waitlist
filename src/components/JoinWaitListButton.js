@@ -14,7 +14,7 @@ const JoinWaitListButton = () => {
     <Link 
         className="bg-primary py-[8px] px-[12px] rounded-[16px] flex items-center"
         href={"/"}
-        target="_blank"
+       // target="_blank"
         // onClick={handleClick}
     >
         <SmileEmoji />
